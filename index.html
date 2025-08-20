@@ -17,11 +17,6 @@
         p {
             margin: 8px 0;
         }
-
-        a {
-            color: blue;
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
@@ -39,13 +34,28 @@
         <li>Done!</li>
     </ol>
 
-    <h3>Possible Fixes and Ideas</h3>
+    <h3>To Cobb County staff</h3>
     <ul>
         <li>Make sure the URL is only interpreted as a link and not anything else.</li>
         <li>I hope a working custom code option gets added (Myspace-esque), because it is quite useful.</li>
     </ul>
 
     <h3>Code Example (Crash Button)</h3>
-    <p><a href="/code.txt" target="_blank">View Code Here!</a></p>
+    <p><a href="static/code.txt" target="_blank">View Code</a></p>
+    <button id="copyBtn">Copy Code</button>
+    <script>
+        document.getElementById("copyBtn").addEventListener("click", async () => {
+            try {
+                const response = await fetch("static/code.txt");
+                const text = await response.text();
+
+                await navigator.clipboard.writeText(text);
+
+                alert("Code copied to clipboard!");
+            } catch (err) {
+                console.error("Failed to copy:", err);
+            }
+        });
+    </script>
 </body>
 </html>
