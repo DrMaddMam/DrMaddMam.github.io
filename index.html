@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +7,11 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
+            line-height: 1.4;
             margin: 20px;
+            background-color: seagreen;
         }
-
+        
         h1, h2, h3 {
             margin-bottom: 10px;
         }
@@ -21,16 +23,16 @@
 </head>
 <body>
     <h1>By Maddox Carlock</h1>
-    <h2>CTLS Student Portal Textbox ACE Possible Fixes and Tutorial</h2>
+    <h2>CTLS Student Portal Textbox ACE</h2>
 
     <h3>Tutorial</h3>
-    <p>So, you want to add custom HTML code to a CTLS textbox? Here's how:</p>
+    <p>In a textbox (class discussion or response).</p>
     <ol>
         <li>Go to a text box and click <strong>Insert Link</strong> or press <kbd>CTRL+K</kbd>.</li>
-        <li>In the URL section type "<", then paste your code (note: script/style headers will not work, but you can embed them).</li>
+        <li>In the URL section type "< ", then paste your code (note: script/style headers will not work, but you can embed them).</li>
         <li>In the text tab, type <code>#/eContent</code> if you want it to be red, or leave it blank.</li>
         <li>Press <strong>Insert</strong>.</li>
-        <li>Click the "<", then press <strong>Unlink</strong>, and remove the "<" at the start.</li>
+        <li>Click the "< ", then press <strong>Unlink</strong>, and remove the "< " at the start.</li>
         <li>Done!</li>
     </ol>
 
@@ -44,18 +46,18 @@
     <p><a href="static/code.txt" target="_blank">View Code</a></p>
     <button id="copyBtn">Copy Code</button>
     <script>
-        document.getElementById("copyBtn").addEventListener("click", async () => {
-            try {
-                const response = await fetch("static/code.txt");
-                const text = await response.text();
+document.getElementById("copyBtn").addEventListener("click", async () => {
+    try {
+        const response = await fetch("static/code.txt");
+        const text = await response.text();
 
-                await navigator.clipboard.writeText(text);
+        await navigator.clipboard.writeText(text);
 
-                alert("Code copied to clipboard!");
-            } catch (err) {
-                console.error("Failed to copy:", err);
-            }
-        });
+        alert("Code copied to clipboard!");
+    } catch (err) {
+        console.error("Failed to copy:", err);
+    }
+});
     </script>
 </body>
 </html>
