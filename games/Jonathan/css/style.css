@@ -1,0 +1,17 @@
+.biggreenmiddletext {
+    font-family: Comic Sans MS;
+    font-size: 60px;
+    color: green;
+    text-align: center;
+    text-shadow: 3px 3px 4px #000000;
+    background-color: grey;
+}
+
+.bigredbutton {
+    border-radius: 100px;
+    border-color: orangered;
+    background-color: red;
+    width: 150px;
+    height: 50px;
+    font-size: 150%;
+}
