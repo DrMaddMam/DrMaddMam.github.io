@@ -32,6 +32,9 @@ async function saySmt() {
             "Go away!",
             "Stop poking me.",
             "Leave me alone.",
+			"Why do you keep me here.",
+			"Why are you doing this to me?",
+			"Please let me go.",
             "...",
             ""
         ];
