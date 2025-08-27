@@ -7,6 +7,10 @@ function sleep(ms) {
 
 let level = "0";
 
+window.addEventListener("load", () => {
+  	load();
+});
+
 function load() {
     level = getCookie("level");
     if (level == "1") {
