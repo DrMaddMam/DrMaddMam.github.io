@@ -57,7 +57,7 @@ async function saySmt() {
         dblClickCheck = true;
         document.getElementById("middleText").textContent = "Goodbye";
         await sleep(2000);
-        await setCookie("level", "1", 1);
+        await setCookie("level", "1", 365);
         window.location.href = "../";
     }
 }
