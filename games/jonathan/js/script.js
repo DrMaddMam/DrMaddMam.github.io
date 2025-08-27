@@ -19,7 +19,7 @@ async function saySmt() {
       await sleep(10000);
       document.getElementById("speakBtn").hidden = false;
       done = true;
-      saySmt();
+      return;
     }
   }
   else if (!dblClickCheck) {
