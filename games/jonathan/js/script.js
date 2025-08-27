@@ -27,7 +27,8 @@ async function saySmt() {
         let responses = [
             "Hello, I'm Jonathan!",
             "Hi again!",
-            "Hi?",
+            "Hi!",
+			"Hi?",
             "Can you stop?",
             "Go away!",
             "Stop it!",
