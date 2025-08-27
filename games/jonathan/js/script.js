@@ -47,7 +47,7 @@ async function saySmt() {
         } else if (responsesI === responses.length - 1) {
             document.getElementById("speakBtn").hidden = true;
             responsesI = 0;
-            await sleep(7500);
+            await sleep(10000);
             document.getElementById("speakBtn").hidden = false;
 			document.getElementById("speakBtn").textContent = "Let Go.";
             done = true;
