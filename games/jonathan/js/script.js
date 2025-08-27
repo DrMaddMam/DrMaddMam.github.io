@@ -11,7 +11,7 @@ window.addEventListener("load", () => {
   	load();
 });
 
-document.getElementById("speakBtn").addEventListener("onclick", () => {
+document.getElementById("speakBtn").addEventListener("click", () => {
 	saySmt();
 });
 
