@@ -1,3 +1,6 @@
+import { getCookie } from "../../../cookies.js";
+import { setCookie } from "../../../cookies.js";
+
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }

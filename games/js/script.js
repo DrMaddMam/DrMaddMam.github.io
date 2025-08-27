@@ -1,3 +1,5 @@
+import { getCookie } from "../../../cookies.js";
+
 function load() {
     let level = getCookie("level");
     if (level == "1") {
