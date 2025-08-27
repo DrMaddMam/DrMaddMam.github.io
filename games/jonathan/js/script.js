@@ -29,6 +29,7 @@ async function saySmt() {
             "Hi again!",
             "Hi!",
 			"Hi?",
+			"Oh, it's you.",
             "Can you stop?",
             "Go away!",
             "Stop it!",
