@@ -46,7 +46,7 @@ async function saySmt() {
         } else if (responsesI === responses.length - 1) {
             document.getElementById("speakBtn").hidden = true;
             responsesI = 0;
-            await sleep(10000);
+            await sleep(7500);
             document.getElementById("speakBtn").hidden = false;
             done = true;
             return;
