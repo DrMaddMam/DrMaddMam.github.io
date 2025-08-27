@@ -11,6 +11,10 @@ window.addEventListener("load", () => {
   	load();
 });
 
+document.getElementById("speakBtn").addEventListener("onclick", () => {
+	saySmt();
+});
+
 function load() {
     level = getCookie("level");
     if (level == "1") {
