@@ -31,8 +31,8 @@ async function saySmt() {
 			"Hi?",
 			"Oh, it's you.",
             "Can you stop?",
-            "Go away!",
             "Stop it!",
+            "Go away.",
             "Leave me alone.",
 			"Why do you keep me here.",
 			"Why are you doing this to me?",
@@ -53,11 +53,14 @@ async function saySmt() {
             done = true;
             return;
         }
-    } else if (!dblClickCheck) {
-        dblClickCheck = true;
-        document.getElementById("middleText").textContent = "Goodbye";
-        await sleep(2000);
-        await setCookie("level", "1", 365);
-        window.location.href = "../";
-    }
+        } else if (!dblClickCheck) {
+            dblClickCheck = true;
+            document.getElementById("middleText").textContent = "Goodbye";
+            await sleep(2000);
+            await setCookie("level", "1", 365);
+            window.location.href = "../";
+        } 
+        if (responsesI > 6) {
+            document.getElementById("middleText").style.fontFamily = "Arial, Helvetica, sans-serif"
+        }
 }

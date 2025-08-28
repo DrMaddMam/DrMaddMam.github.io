@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CTLS ACE</title>
+    <title>Games</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -32,6 +32,12 @@
         <li id="jonathanGameLink"><h2><a href="./jonathan">"Jonathan" Game by Dillon</a></h2></li>
     </ul>
     <script type="module" src="../cookies.js"></script>
-    <script type="module" src="js/script.js"></script>
+    <script type="module">
+import { getCookie } from "../../../cookies.js";
+
+window.addEventListener("load", () => {
+    document.getElementById("jonathanGameLink").hidden = getCookie("level")
+});
+    </script>
 </body>
 </html>
