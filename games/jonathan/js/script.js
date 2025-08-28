@@ -59,8 +59,8 @@ async function saySmt() {
             await sleep(2000);
             await setCookie("level", "1", 365);
             window.location.href = "../";
-        } 
+        }
         if (responsesI > 6) {
-            document.getElementById("middleText").style.fontFamily = "Arial, Helvetica, sans-serif"
+            document.getElementById("middleText").style.fontFamily = "Times New Roman, serif";
         }
 }
